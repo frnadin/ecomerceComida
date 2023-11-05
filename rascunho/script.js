@@ -3,7 +3,7 @@ var nome
 var senha 
 var sexo
 
-function getValue(){
+function getValue(){ // função login script
 
     nome = document.getElementById("nome").value
     senha = document.getElementById("idade").value
@@ -11,10 +11,11 @@ function getValue(){
 console.log(senha)
     
 document.getElementById('login').style.visibility = 'hidden'
-document.getElementById('log').style.textDecoration = 'none'
+document.getElementById('log').style.marginLeft = "80%"
+document.getElementById('log').style.textDecorationLine = "none"
 
 
-    if(nome=="adm" && senha=="123"){
+    if(nome=="fmg" && senha=="123"){
         document.getElementById("log").innerHTML = "Seja bem vindo " + nome + " o foda"
     }else{      
         document.getElementById("log").innerHTML = "Seja bem vindo " + nome 
@@ -22,8 +23,8 @@ document.getElementById('log').style.textDecoration = 'none'
 
 }
 
-function login(){
+function login(){ // função para aparecer o login
     document.getElementById('login').style.visibility = 'visible'
+    }
 
-    
-}
+ 

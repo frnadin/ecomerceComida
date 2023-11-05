@@ -30,11 +30,68 @@ body {
 
 #log{
     display: block;
-    margin-right: 85%;
+    margin-left: 94%;
     margin-bottom: 10px;
     color: white;
     visibility: visible;
+    margin-right: 10px;
+    background-color: #899f70;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid transparent;
+    text-align: center;
+    text-indent: 4px;
 }
+
+  #log:hover{
+    transition: 0.5s;
+    background-color: #376f7a;
+    border: 1px solid white;
+  }
+
+  #log:active{
+    transition: 0.5s;
+    color: red;
+  }
+
+
+  #login {
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #376d5b;
+    padding: 10px;
+    border: 6px solid #899f70;
+    border-radius: 15px;
+    color: white;
+    animation-name: example;
+    animation-duration: 4s;
+    text-align: center;
+    }
+  
+   
+  #butao{
+      padding: 8px;
+      display: inline;
+      margin-top: 15px;
+      border-radius: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #e0e1cd;
+      border: 1px solid
+  }
+  #butao:hover{
+    background-color: #899f70;
+    cursor: pointer;
+    
+   }
+  #butao:hover{
+    transition: 0.5s;
+      color: #e0e1cd;
+      border: 1px solid #e0e1cd;
+  }
 
 header {
   background-color:#376d5b;
@@ -69,8 +126,8 @@ h2{
     padding: 15px;
     text-align: start;
     margin-bottom: 15px;
+    
 }
-
 
 .imagen-Tamanho{
     width: 100%;
@@ -86,38 +143,41 @@ h3{
     border-left: 5px solid;
     border-color: #899f70;
     padding-left: 10px;
+    margin-bottom: 10px;
 }
 
-h3:hover{
+h3:hover   {
     border-color: red;
     
 }
+
+ 
+
+p{
+  margin-bottom: 5px;
+}
+
+.qtds{
+  width: 40px;
+  margin-bottom: 5px;
+
+   
+  }
+  
+  .btnBuy{
+    display: block;
+    background-color: #376d5b;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #e0e1cd;
+    border-radius: 10px;
+  }
 
 
 .espacoInputs {
   margin: 15px;
 }
 
-#login {
-  visibility: hidden;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #376d5b;
-  padding: 10px;
-  border: 6px solid #899f70;
-  border-radius: 15px;
-  color: white;
-  
-  
-}
 
-#butao{
-    padding: 5px;
-    display: inline;
-    margin-left: 40%;
-    margin-top: 15px;
-    
-}
 

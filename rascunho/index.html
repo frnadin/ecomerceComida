@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MelhoresComidas</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <script src="scripts/ligaDesliga.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon/favicon (3).ico" type="image/x-icon">
 </head>
@@ -14,11 +15,11 @@
     <div id="login">
 
         <div class="espacoInputs">
-             <label >Username: <input id="nome" placeholder="Joaozin" type="text"></label>
+             <label >Username: <input id="nome" placeholder="user" type="text"></label>
          </div>
 
         <div class="espacoInputs">
-            <label >Password: <input id="idade" placeholder="999" type="password"></label>
+            <label >Password: <input id="idade" placeholder="****" type="password"></label>
         </div>
    
         <div class="espacoInputs">
@@ -36,35 +37,53 @@
 <main class="container">
     <section class="conteudoContainer">
         <h2>Chose the food u want to buy 😋</h2>
-<article class="card">
-    <img class="imagen-Tamanho" id="img1" src="imagens/pizza.png" alt="sushi"  >
-    <h3>Pizza </h3>
+
+<article class="card"> 
+    <img onmouseover="mudaCorSelectPizza()" onmouseout="returnCorPizza()" class="imagen-Tamanho" id="img1" src="imagens/pizza.png" alt="sushi"  >
+    <h3  onmouseover="mudaCorSelectPizza()" onmouseout="returnCorPizza()" class="seletor">Pizza </h3>
     <p>Cost: <span>$ 7.99</span></p>
+    <p>Qtd: <input type="number" min="1" max="10" id="qtdPiz" class="qtds"></p>
+    <a  onmouseover="mudaCorSelectPizza()" onmouseout="returnCorPizza()" href="#" class="btnBuy">BUY</a>
 </article>
+
 <article class="card">
-    <img class="imagen-Tamanho" id="img2" src="imagens/burguer.png" alt="" srcset="">
-    <h3>Double hamburguer</h3>
+    <img onmouseover="mudaCorSelectBurguer()" onmouseout="returnCorBurguer()" class="imagen-Tamanho" id="img2" src="imagens/burguer.png" alt="" srcset="">
+    <h3 onmouseover="mudaCorSelectBurguer()" onmouseout="returnCorBurguer()"  class="seletor">Double hamburguer</h3>
     <p>Cost: <span>$ 9.99</span></p>
+    <p>Qtd: <input type="number" min="1" max="10" id="qtdPBur" class="qtds"></p>
+    <a onmouseover="mudaCorSelectBurguer()" onmouseout="returnCorBurguer()"  href="#" onmouseover="mudaCorSelect()" class="btnBuy">BUY</a>
 </article>
+
 <article class="card">
-    <img class="imagen-Tamanho" id="img1" src="imagens/hotDog.png" alt="" srcset="">
-    <h3>Hot-dog</h3>
+    <img onmouseover="mudaCorSelectDog()" onmouseout="returnCorDog()" class="imagen-Tamanho" id="img3" src="imagens/hotDog.png" alt="" srcset="">
+    <h3  onmouseover="mudaCorSelectDog()" onmouseout="returnCorDog()" class="seletor">Hot-dog</h3>
     <p>Cost: <span>$ 4.99</span></p>
+    <p>Qtd: <input type="number" min="1" max="10" id="qtdDog" class="qtds"></p>
+    <a  onmouseover="mudaCorSelectDog()" onmouseout="returnCorDog()" href="#" class="btnBuy">BUY</a>
 </article>
+
 <article class="card">
-    <img class="imagen-Tamanho" id="img1" src="imagens/batatinhas.png" alt="sushi"  >
-    <h3>Potatos </h3>
+    <img onmouseover="mudaCorSelectPotato()" onmouseout="returnCorPotato()" class="imagen-Tamanho" id="img4" src="imagens/batatinhas.png" alt="sushi"  >
+    <h3 onmouseover="mudaCorSelectPotato()" onmouseout="returnCorPotato()" class="seletor">Potatos </h3>
     <p>Cost: <span>$ 2.99</span></p>
+    <p>Qtd: <input type="number" min="1" max="10" id="qtdPot" class="qtds"></p>
+    <a onmouseover="mudaCorSelectPotato()" onmouseout="returnCorPotato()" href="#" class="btnBuy">BUY</a>
 </article>
+
 <article class="card">
-    <img class="imagen-Tamanho" id="img2" src="imagens/refri.png" alt="" srcset="">
-    <h3>Soft drink</h3>
+    <img onmouseover="mudaCorSelectSoda()" onmouseout="returnCorDrink()" class="imagen-Tamanho" id="img5" src="imagens/refri.png" alt="" srcset="">
+    <h3 onmouseover="mudaCorSelectSoda()" onmouseout="returnCorDrink()" class="seletor">Soft drink</h3>
     <p>Cost: <span>$ 4.99</span></p>
+    <p>Qtd: <input type="number" min="1" max="10" id="qtdRef" class="qtds"></p>
+    <a onmouseover="mudaCorSelectSoda()" onmouseout="returnCorDrink()" href="#" class="btnBuy">BUY</a>
 </article>
+
 <article class="card">
-    <img class="imagen-Tamanho" id="img1" src="imagens/molhinho.png" alt="" srcset="">
-    <h3>Sauces</h3>
+    <img onmouseover="mudaCorSelectSauce()" onmouseout="returnCorSauce()" class="imagen-Tamanho" id="img6" src="imagens/molhinho.png" alt="" srcset="">
+    <h3  onmouseover="mudaCorSelectSauce()" onmouseout="returnCorSauce()" class="seletor">Sauces</h3>
     <p>Cost: <span>$ 0.99</span></p>
+    <p>Qtd: <input type="number" min="1" max="10" id="qtdSau" class="qtds"></p>
+    <a  onmouseover="mudaCorSelectSauce()" onmouseout="returnCorSauce()" href="#" class="btnBuy">BUY</a>
 </article>
 
 </article>
