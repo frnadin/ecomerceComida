@@ -28,6 +28,61 @@
 
      </div>
 
+<div id="notinha">
+    <table>
+<tr>
+    <th>qtd</th> 
+    <th>product</th>
+    <th>unit</th>
+    <th>totalValue</th>
+</tr>
+
+<tr>
+<td class="center" id="saidaQtdPiz"></td>
+<td>Pizza</td>
+<td class="center">$ 7.99</td>
+<td id="saidaPiz"></td>
+</tr>
+
+<tr>
+    <td class="center" id="saidaQtdBur"></td>
+<td>Double burguer</td>
+<td class="center">$ 9.99</td>
+<td id="saidaBur"></td>
+</tr>
+
+<tr>
+    <td class="center" id="saidaQtdDog"></td>
+<td>Hot-dog</td>
+<td class="center">$ 4.99</td>
+<td id="saidaDog"></td>
+</tr>
+
+<tr>
+    <td class="center" id="saidaQtdPot"></td>
+<td>Potato</td>
+<td class="center">$ 2.99</td>
+<td id="saidaPot"></td>
+
+</tr>
+
+<tr>
+    <td class="center" id="saidaQtdSof"></td>
+<td>Soda</td>
+<td class="center">$ 4.99</td>
+<td id="saidaSof"></td>
+</tr>
+
+<tr>
+    <td class="center" id="saidaQtdSau"></td>
+<td>Sauce</td>
+<td class="center">$ 0.99</td>
+<td id="saidaSau"></td>
+</tr>
+
+    </table>
+</div>
+
         <header>
             <a class="link" href="#">Carrinho <img src="imagens/carrinho.png" alt=""  ></a>
             <h1>The bests foods of the world!</h1>
@@ -43,15 +98,15 @@
     <h3  onmouseover="mudaCorSelectPizza()" onmouseout="returnCorPizza()" class="seletor">Pizza </h3>
     <p>Cost: <span>$ 7.99</span></p>
     <p>Qtd: <input type="number" min="1" max="10" id="qtdPiz" class="qtds"></p>
-    <a  onmouseover="mudaCorSelectPizza()" onmouseout="returnCorPizza()" href="#" class="btnBuy">BUY</a>
+    <a onclick="pizza()" onmouseover="mudaCorSelectPizza()" onmouseout="returnCorPizza()"  class="btnBuy">BUY</a>
 </article>
 
 <article class="card">
     <img onmouseover="mudaCorSelectBurguer()" onmouseout="returnCorBurguer()" class="imagen-Tamanho" id="img2" src="imagens/burguer.png" alt="" srcset="">
     <h3 onmouseover="mudaCorSelectBurguer()" onmouseout="returnCorBurguer()"  class="seletor">Double hamburguer</h3>
     <p>Cost: <span>$ 9.99</span></p>
-    <p>Qtd: <input type="number" min="1" max="10" id="qtdPBur" class="qtds"></p>
-    <a onmouseover="mudaCorSelectBurguer()" onmouseout="returnCorBurguer()"  href="#" onmouseover="mudaCorSelect()" class="btnBuy">BUY</a>
+    <p>Qtd: <input type="number" min="1" max="10" id="qtdBur" class="qtds"></p>
+    <a onclick="burguer()" onmouseover="mudaCorSelectBurguer()" onmouseout="returnCorBurguer()" class="btnBuy">BUY</a>
 </article>
 
 <article class="card">
@@ -59,7 +114,7 @@
     <h3  onmouseover="mudaCorSelectDog()" onmouseout="returnCorDog()" class="seletor">Hot-dog</h3>
     <p>Cost: <span>$ 4.99</span></p>
     <p>Qtd: <input type="number" min="1" max="10" id="qtdDog" class="qtds"></p>
-    <a  onmouseover="mudaCorSelectDog()" onmouseout="returnCorDog()" href="#" class="btnBuy">BUY</a>
+    <a onclick="dog()" onmouseover="mudaCorSelectDog()" onmouseout="returnCorDog()" class="btnBuy">BUY</a>
 </article>
 
 <article class="card">
@@ -67,7 +122,7 @@
     <h3 onmouseover="mudaCorSelectPotato()" onmouseout="returnCorPotato()" class="seletor">Potatos </h3>
     <p>Cost: <span>$ 2.99</span></p>
     <p>Qtd: <input type="number" min="1" max="10" id="qtdPot" class="qtds"></p>
-    <a onmouseover="mudaCorSelectPotato()" onmouseout="returnCorPotato()" href="#" class="btnBuy">BUY</a>
+    <a onclick="potato()" onmouseover="mudaCorSelectPotato()" onmouseout="returnCorPotato()" class="btnBuy">BUY</a>
 </article>
 
 <article class="card">
@@ -75,7 +130,7 @@
     <h3 onmouseover="mudaCorSelectSoda()" onmouseout="returnCorDrink()" class="seletor">Soft drink</h3>
     <p>Cost: <span>$ 4.99</span></p>
     <p>Qtd: <input type="number" min="1" max="10" id="qtdRef" class="qtds"></p>
-    <a onmouseover="mudaCorSelectSoda()" onmouseout="returnCorDrink()" href="#" class="btnBuy">BUY</a>
+    <a onclick="soda()" onmouseover="mudaCorSelectSoda()" onmouseout="returnCorDrink()" class="btnBuy">BUY</a>
 </article>
 
 <article class="card">
@@ -83,18 +138,17 @@
     <h3  onmouseover="mudaCorSelectSauce()" onmouseout="returnCorSauce()" class="seletor">Sauces</h3>
     <p>Cost: <span>$ 0.99</span></p>
     <p>Qtd: <input type="number" min="1" max="10" id="qtdSau" class="qtds"></p>
-    <a  onmouseover="mudaCorSelectSauce()" onmouseout="returnCorSauce()" href="#" class="btnBuy">BUY</a>
+    <a onclick="sauce()" onmouseover="mudaCorSelectSauce()" onmouseout="returnCorSauce()" class="btnBuy">BUY</a>
 </article>
-
-</article>
-
     </section>
-
-
 </main>
 
 
+<footer>
 
+    <a id="finalizar" onclick="finalizar()">finalize purchase</a>
+
+</footer>
  
     
 </body>
