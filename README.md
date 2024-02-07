@@ -1,2 +1,2 @@
 # ecomerceComida
-ecomerce pra treinar 
+Exercicio ecomerce feito em aula
